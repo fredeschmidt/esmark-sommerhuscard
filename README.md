@@ -57,6 +57,20 @@ By-sider filtrerer yderligere på lokation, fx `/blaavand`, `/hvide-sande`,
   kort deler hero-billede (billede #1)** så længe antal kort ≤ antal fotos. I
   produktion udskiftes pool'en med Esmarks rigtige CDN-stier.
 
+## Kendte begrænsninger
+
+- **Billeder er placeholders** – datasættets billed-URL'er peger på Esmarks CDN,
+  men der bruges lokale placeholder-fotos (`public/placeholders/`). I produktion
+  skal pool'en udskiftes med de rigtige CDN-stier.
+- **Statisk datasæt** – data læses fra `data/sommerhuse.json` ved build-tid.
+  Der er ingen runtime-API, så nye/ændrede huse kræver et nyt build.
+- **Dobbelt-kodet kildedata** – kildefilen er mojibake-kodet og normaliseres ved
+  indlæsning (`fixMojibake()`); en ukendt tegnkombination kan i princippet slippe
+  igennem, hvis den ikke er dækket af mapping'en.
+- **Ingen automatiserede tests** – projektet har ikke test- eller CI-opsætning.
+- **Hårdkodede by-slugs** – understøttede byer afledes af datasættet; en helt ny
+  lokation skal findes i `data/sommerhuse.json` for at få sin egen side.
+
 ## Struktur
 
 ```
