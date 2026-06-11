@@ -31,7 +31,19 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `/${location}` },
-    openGraph: { title: `${title} | Esmark`, description, locale: "da_DK" },
+    openGraph: {
+      type: "website",
+      siteName: "Esmark",
+      locale: "da_DK",
+      url: `/${location}`,
+      title: `${title} | Esmark`,
+      description,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Esmark`,
+      description,
+    },
   };
 }
 

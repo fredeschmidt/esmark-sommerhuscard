@@ -9,6 +9,22 @@ export const metadata: Metadata = {
   },
   description:
     "Find dit sommerhus ved den jyske vestkyst. Hundevenlige feriehuse med plads til hele familien.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "Esmark",
+    locale: "da_DK",
+    url: "/",
+    title: "Sommerhuse ved Vestkysten | Esmark",
+    description:
+      "Find dit sommerhus ved den jyske vestkyst. Hundevenlige feriehuse med plads til hele familien.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sommerhuse ved Vestkysten | Esmark",
+    description:
+      "Find dit sommerhus ved den jyske vestkyst. Hundevenlige feriehuse med plads til hele familien.",
+  },
 };
 
 export default function RootLayout({
