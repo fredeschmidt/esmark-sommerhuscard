@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+}
+
+/* Synligt fokus for tastaturbrugere på tværs af interaktive elementer. */
+:focus-visible {
+  outline-offset: 2px;
+}

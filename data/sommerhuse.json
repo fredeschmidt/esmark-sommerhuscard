@@ -1,0 +1,437 @@
+{
+  "hits": [
+    {
+      "id": "__6558",
+      "name": "60632",
+      "city": "BlÃ¥vand",
+      "address1": "Ingridsvej 5",
+      "address2": "BlÃ¥vand",
+      "title": "Ferie mellem skÃ¸nne klitter ved Vesterhavet",
+      "postalCode": "6857",
+      "lodgingId": 6558,
+      "fromPrice": 6308,
+      "fromFeePrice": 270,
+      "userRating": { "average": 4.833333333, "best": 5, "count": 9, "worst": 4.5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-60632-590492.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-60632-628377.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-60632-543923.jpg", "sortOrder": 7 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 7,
+        "Bedrooms": 4,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 156,
+        "DistanceToSeaMeters": 250,
+        "DistanceToShoppingMeters": 800,
+        "PetsAllowed": true,
+        "PetsMaxCount": 1,
+        "StarRating": 4
+      }
+    },
+    {
+      "id": "__1175",
+      "name": "E4926",
+      "city": "Hvide Sande",
+      "address1": "Tingodden 135",
+      "address2": "Ãrgab",
+      "title": "Dejligt hus med sauna og spa, i yderste klitrÃ¦kke",
+      "postalCode": "6960",
+      "lodgingId": 1175,
+      "fromPrice": 4188,
+      "fromFeePrice": 270,
+      "userRating": { "average": 4.131578947, "best": 5, "count": 19, "worst": 2.5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-E4926-480200.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-E4926-480201.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-E4926-515005.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 8,
+        "Bedrooms": 4,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 96,
+        "DistanceToSeaMeters": 100,
+        "DistanceToShoppingMeters": 5500,
+        "PetsAllowed": true,
+        "PetsMaxCount": 2,
+        "StarRating": 3
+      }
+    },
+    {
+      "id": "__3500",
+      "name": "i6767",
+      "city": "RingkÃ¸bing",
+      "address1": "Hvidbjergvej 105",
+      "address2": "SÃ¸ndervig",
+      "title": "Fantastisk poolhus i SÃ¸ndervig med aktivitetsafdeling og sauna",
+      "postalCode": "6950",
+      "lodgingId": 3500,
+      "fromPrice": 9948,
+      "fromFeePrice": 270,
+      "userRating": { "average": 4.738095238, "best": 5, "count": 21, "worst": 4 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-i6767-325134.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-i6767-243647.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-i6767-528923.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 8,
+        "Bedrooms": 4,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 180,
+        "DistanceToSeaMeters": 350,
+        "DistanceToShoppingMeters": 800,
+        "PetsAllowed": true,
+        "PetsMaxCount": 1,
+        "StarRating": "4+"
+      }
+    },
+    {
+      "id": "__107",
+      "name": "B2023",
+      "city": "Hvide Sande",
+      "address1": "Rauhesvej 24",
+      "address2": "BjerregÃ¥rd",
+      "title": "Arkitekttegnet sommerhus i BjerregÃ¥rd med brÃ¦ndeovn og sauna",
+      "postalCode": "6960",
+      "lodgingId": 107,
+      "fromPrice": 3738,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.583333333, "best": 5, "count": 24, "worst": 3.5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-B2023-566195.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-B2023-632568.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-B2023-612547.jpg", "sortOrder": 7 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 1,
+        "HouseAreaSquareMeters": 101,
+        "DistanceToSeaMeters": 550,
+        "DistanceToShoppingMeters": 700,
+        "PetsAllowed": true,
+        "PetsMaxCount": 2,
+        "StarRating": "3+"
+      }
+    },
+    {
+      "id": "__5752",
+      "name": "35027",
+      "city": "Hemmet",
+      "address1": "KornblomstvÃ¦nget 24",
+      "address2": "Bork Havn",
+      "title": "Flot sommerhus i Bork Havn med sauna og spabad",
+      "postalCode": "6893",
+      "lodgingId": 5752,
+      "fromPrice": 4988,
+      "fromFeePrice": 270,
+      "userRating": { "average": 4.555555556, "best": 5, "count": 9, "worst": 4 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-35027-462041.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-35027-444880.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-35027-477040.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 8,
+        "Bedrooms": 4,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 126,
+        "DistanceToSeaMeters": 1300,
+        "DistanceToShoppingMeters": 1200,
+        "PetsAllowed": false,
+        "StarRating": "3+"
+      }
+    },
+    {
+      "id": "__7360",
+      "name": "80309",
+      "city": "RÃ¸mÃ¸",
+      "address1": "Koubjerg 13",
+      "address2": "Toftum, RÃ¸mÃ¸",
+      "title": "Sommerhus i Toftum â afslapning tÃ¦t strand og klitter",
+      "postalCode": "6792",
+      "lodgingId": 7360,
+      "fromPrice": 2608,
+      "fromFeePrice": 270,
+      "userRating": { "average": 4.75, "best": 5, "count": 2, "worst": 4.5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-80309-620678.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-80309-631526.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-80309-631527.jpg", "sortOrder": 2 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 1,
+        "HouseAreaSquareMeters": 65,
+        "DistanceToSeaMeters": 3800,
+        "DistanceToShoppingMeters": 6500,
+        "PetsAllowed": true,
+        "PetsMaxCount": 1,
+        "StarRating": 3
+      }
+    },
+    {
+      "id": "__2531",
+      "name": "i6411",
+      "city": "RingkÃ¸bing",
+      "address1": "Badevej 20 F2",
+      "address2": "SÃ¸ndervig",
+      "title": "SkÃ¸n ferielejlighed med spa, sauna og fantastisk beliggenhed",
+      "postalCode": "6950",
+      "lodgingId": 2531,
+      "fromPrice": 2838,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.833333333, "best": 5, "count": 12, "worst": 4.5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-i6411-324814.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-i6411-313260.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-i6411-538190.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 4,
+        "Bedrooms": 2,
+        "NumberOfBathrooms": 1,
+        "HouseAreaSquareMeters": 90,
+        "DistanceToSeaMeters": 230,
+        "DistanceToShoppingMeters": 250,
+        "PetsAllowed": false,
+        "StarRating": 4
+      }
+    },
+    {
+      "id": "__4959",
+      "name": "F4342",
+      "city": "Hvide Sande",
+      "address1": "NÃ¸rregade 2, lejlighed 30",
+      "address2": "Hvide Sande",
+      "title": "Ferielejlighed til 6 personer, centralt i Hvide Sandes havnemiljÃ¸",
+      "postalCode": "6960",
+      "lodgingId": 4959,
+      "fromPrice": 4628,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.80952381, "best": 5, "count": 21, "worst": 4 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-F4342-419702.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-F4342-419674.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-F4342-422078.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 141,
+        "DistanceToSeaMeters": 1000,
+        "DistanceToShoppingMeters": 600,
+        "PetsAllowed": true,
+        "PetsMaxCount": 2,
+        "StarRating": 5
+      }
+    },
+    {
+      "id": "__6122",
+      "name": "30389",
+      "city": "NÃ¸rre Nebel",
+      "address1": "Peder Larsensvej 17",
+      "address2": "Houstrup",
+      "title": "Hyggeligt strÃ¥tÃ¦kt feriehus i charmerende Houstrup - hund tilladt",
+      "postalCode": "6830",
+      "lodgingId": 6122,
+      "fromPrice": 3848,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.625, "best": 5, "count": 12, "worst": 4 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-30389-581691.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-30389-463783.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-30389-463817.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 125,
+        "DistanceToSeaMeters": 3500,
+        "DistanceToShoppingMeters": 3500,
+        "PetsAllowed": true,
+        "PetsMaxCount": 2,
+        "StarRating": 4
+      }
+    },
+    {
+      "id": "__3334",
+      "name": "K6863",
+      "city": "RingkÃ¸bing",
+      "address1": "SÃ¸tangevej 1 Nr. 6",
+      "address2": "Holmsland",
+      "title": "Ferie med alt inklusiv + GRATIS adgang til Adventure Park",
+      "postalCode": "6950",
+      "lodgingId": 3334,
+      "fromPrice": 8198,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.25, "best": 5, "count": 10, "worst": 3.5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-K6863-493622.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-K6863-493623.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-K6863-359411.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 14,
+        "Bedrooms": 7,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 250,
+        "DistanceToSeaMeters": 6730,
+        "DistanceToShoppingMeters": 3000,
+        "PetsAllowed": true,
+        "PetsMaxCount": 3,
+        "StarRating": 4
+      }
+    },
+    {
+      "id": "__5266",
+      "name": "H5496",
+      "city": "RingkÃ¸bing",
+      "address1": "Vestklitvej 26",
+      "address2": "Klegod",
+      "title": "NaturskÃ¸nt sommerhus mellem SÃ¸ndervig og Hvide Sande",
+      "postalCode": "6950",
+      "lodgingId": 5266,
+      "fromPrice": 4598,
+      "fromFeePrice": 255,
+      "userRating": { "average": 5, "best": 5, "count": 1, "worst": 5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-H5496-393150.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-H5496-393151.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-H5496-408348.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 1,
+        "HouseAreaSquareMeters": 85,
+        "DistanceToSeaMeters": 900,
+        "DistanceToShoppingMeters": 3500,
+        "PetsAllowed": true,
+        "PetsMaxCount": 1,
+        "StarRating": 3
+      }
+    },
+    {
+      "id": "__4357",
+      "name": "KK1116",
+      "city": "RingkÃ¸bing",
+      "address1": "Risbjergvej 39",
+      "address2": "Lodbjerg Hede",
+      "title": "Dejligt sommerhus med udebruser til 6 personer pÃ¥ Lodbjerg Hede",
+      "postalCode": "6950",
+      "lodgingId": 4357,
+      "fromPrice": 3448,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.5625, "best": 5, "count": 8, "worst": 3.5 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-KK1116-633557.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-KK1116-633555.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-KK1116-338184.jpg", "sortOrder": 9 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 1,
+        "HouseAreaSquareMeters": 91,
+        "DistanceToSeaMeters": 2600,
+        "DistanceToShoppingMeters": 3300,
+        "PetsAllowed": true,
+        "PetsMaxCount": 2,
+        "StarRating": 4
+      }
+    },
+    {
+      "id": "__6815",
+      "name": "K6697",
+      "city": "RingkÃ¸bing",
+      "address1": "Klevevej 18",
+      "address2": "Lodbjerg Hede",
+      "title": "Lyst sommerhus pÃ¥ Lodbjerg Hede med dejlig have",
+      "postalCode": "6950",
+      "lodgingId": 6815,
+      "fromPrice": 2258,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.5, "best": 5, "count": 2, "worst": 4 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-K6697-579518.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-K6697-618909.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-K6697-545087.jpg", "sortOrder": 7 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 1,
+        "HouseAreaSquareMeters": 89,
+        "DistanceToSeaMeters": 1300,
+        "DistanceToShoppingMeters": 1100,
+        "PetsAllowed": true,
+        "PetsMaxCount": 1,
+        "StarRating": 3
+      }
+    },
+    {
+      "id": "__6657",
+      "name": "60644",
+      "city": "BlÃ¥vand",
+      "address1": "BlÃ¥vandvej 75",
+      "address2": "BlÃ¥vand",
+      "title": "Go', gammeldaws hygge i fint, strÃ¥tÃ¦kt sommerhus med spa",
+      "postalCode": "6857",
+      "lodgingId": 6657,
+      "fromPrice": 3658,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.5, "best": 5, "count": 9, "worst": 4 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-60644-577824.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-60644-528039.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-60644-526152.jpg", "sortOrder": 5 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 6,
+        "Bedrooms": 3,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 157,
+        "DistanceToSeaMeters": 2000,
+        "DistanceToShoppingMeters": 700,
+        "PetsAllowed": true,
+        "PetsMaxCount": 2,
+        "StarRating": "2+"
+      }
+    },
+    {
+      "id": "__5874",
+      "name": "60544",
+      "city": "BlÃ¥vand",
+      "address1": "Ved Skoven 23B",
+      "address2": "BlÃ¥vand",
+      "title": "8-personers sommerhus med rolig beliggenhed i BlÃ¥vand",
+      "postalCode": "6857",
+      "lodgingId": 5874,
+      "fromPrice": 3828,
+      "fromFeePrice": 255,
+      "userRating": { "average": 4.6, "best": 5, "count": 10, "worst": 4 },
+      "images": [
+        { "url": "/images/lodgings/Feriehus-60544-497743.jpg", "sortOrder": 0 },
+        { "url": "/images/lodgings/Feriehus-60544-520651.jpg", "sortOrder": 1 },
+        { "url": "/images/lodgings/Feriehus-60544-523710.jpg", "sortOrder": 48 }
+      ],
+      "facilities": {
+        "NumberOfPersons": 8,
+        "Bedrooms": 4,
+        "NumberOfBathrooms": 2,
+        "HouseAreaSquareMeters": 125,
+        "DistanceToSeaMeters": 2200,
+        "DistanceToShoppingMeters": 1200,
+        "PetsAllowed": true,
+        "PetsMaxCount": 2,
+        "StarRating": 3
+      }
+    }
+  ]
+}
