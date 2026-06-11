@@ -34,7 +34,7 @@ export default function HouseItem({
   }).format(house.rating.average);
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl bg-white transition focus-within:ring-2 focus-within:ring-brand">
+    <article className="flex flex-col overflow-hidden rounded-2xl bg-white">
       <header className="flex items-center justify-between gap-3 px-4 py-3">
         <p className="flex items-center gap-1.5 text-sm font-medium text-brand">
           <ShieldCheckIcon className="h-5 w-5 shrink-0 text-brand" />

@@ -273,7 +273,6 @@
       "userRating": { "average": 4.25, "best": 5, "count": 10, "worst": 3.5 },
       "images": [
         { "url": "/images/lodgings/Feriehus-K6863-493622.jpg", "sortOrder": 0 },
-        { "url": "/images/lodgings/Feriehus-K6863-493623.jpg", "sortOrder": 1 },
         { "url": "/images/lodgings/Feriehus-K6863-359411.jpg", "sortOrder": 5 }
       ],
       "facilities": {

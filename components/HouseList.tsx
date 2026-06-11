@@ -1,7 +1,6 @@
 import HouseItem from "@/components/HouseItem";
 import type { House } from "@/lib/houses";
 import { formatPrice } from "@/lib/format";
-import { imagesForCard } from "@/lib/placeholders";
 
 interface HouseListProps {
   heading: string;
@@ -89,7 +88,7 @@ export default function HouseList({
           <li key={house.id} className="h-full">
             <HouseItem
               house={house}
-              images={imagesForCard(i)}
+              images={house.images}
               priority={i === 0}
             />
           </li>

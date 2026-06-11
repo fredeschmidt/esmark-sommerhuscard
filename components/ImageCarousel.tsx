@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import Image from "next/image";
+import { CARD_IMAGE_QUALITY } from "@/lib/imageConfig";
 import { ChevronIcon } from "./icons";
 
 interface ImageCarouselProps {
@@ -18,14 +19,39 @@ export default function ImageCarousel({
   altBase,
   priority = false,
 }: ImageCarouselProps) {
-  const count = Math.max(images.length, 1);
+  // A house with no usable images would otherwise render an empty grey box; show
+  // an explicit, labelled placeholder instead. (The old placeholder pool used to
+  // guarantee every card had images; the real CDN data carries no such promise.)
+  if (images.length === 0) {
+    return (
+      <div
+        className="flex aspect-[4/5] w-full items-center justify-center bg-slate-100"
+        role="img"
+        aria-label={`Intet billede tilgængeligt for ${altBase}`}
+      >
+        <span className="text-sm text-slate-400">Billede mangler</span>
+      </div>
+    );
+  }
+
+  // images.length is guaranteed ≥ 1 here (the empty case returned above).
+  const count = images.length;
   const [index, setIndex] = useState(0);
+  // Only render slides the user has actually reached, so each card fetches just
+  // its first image up front instead of all of them when it scrolls into view.
+  const [seen, setSeen] = useState<Set<number>>(() => new Set([0]));
   const groupId = useId();
 
-  const go = (next: number) => setIndex((next + count) % count);
+  const go = (next: number) => {
+    const target = (next + count) % count;
+    setIndex(target);
+    setSeen((prev) => (prev.has(target) ? prev : new Set([...prev, target])));
+  };
 
   return (
     <div
+      // aspect-[4/5] must match CARD_IMAGE_ASPECT (lib/imageConfig.ts), the crop
+      // ratio the image loader requests from the CDN.
       className="group relative aspect-[4/5] w-full overflow-hidden bg-slate-200"
       role="group"
       aria-roledescription="billedkarrusel"
@@ -42,20 +68,23 @@ export default function ImageCarousel({
     >
       {/* Only the active image is actually visible; we use next/image for
           optimization and correct dimensions (avoids layout shift). */}
-      {images.map((src, i) => (
-        <Image
-          key={src}
-          src={src}
-          alt={`${altBase} – billede ${i + 1} af ${count}`}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          priority={priority && i === 0}
-          className={`object-cover transition-opacity duration-300 ${
-            i === index ? "opacity-100" : "opacity-0"
-          }`}
-          aria-hidden={i !== index}
-        />
-      ))}
+      {images.map((src, i) =>
+        seen.has(i) ? (
+          <Image
+            key={src}
+            src={src}
+            alt={`${altBase} – billede ${i + 1} af ${count}`}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            quality={CARD_IMAGE_QUALITY}
+            priority={priority && i === 0}
+            className={`object-cover transition-opacity duration-300 ${
+              i === index ? "opacity-100" : "opacity-0"
+            }`}
+            aria-hidden={i !== index}
+          />
+        ) : null,
+      )}
 
       {count > 1 && (
         <>

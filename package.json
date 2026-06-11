@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "warm-images": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/warm-image-cache.mjs"
   },
   "dependencies": {
     "next": "^15.5.19",

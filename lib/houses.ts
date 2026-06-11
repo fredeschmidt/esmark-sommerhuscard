@@ -1,4 +1,5 @@
 import rawData from "@/data/sommerhuse.json";
+import { IMAGE_CDN } from "@/lib/imageConfig";
 
 /**
  * The data source ("sommerhuse.json") is double-encoded: UTF-8 bytes are stored
@@ -10,6 +11,15 @@ function fixMojibake(value: string): string {
   const decoded = Buffer.from(value, "latin1").toString("utf8");
   // If the re-decoding produced an invalid character, we keep the original.
   return decoded.includes("�") ? value : decoded;
+}
+
+/**
+ * Builds a full CDN URL for a lodging image. Sizing/encoding query params are
+ * added per device by the custom next/image loader (see lib/imageLoader.ts),
+ * so the stored URL is the bare CDN path.
+ */
+function lodgingImageUrl(url: string): string {
+  return `${IMAGE_CDN}${url}`;
 }
 
 export interface Facilities {
@@ -51,7 +61,8 @@ export interface House {
   lodgingId: number;
   fromPrice: number;
   rating: { average: number; count: number };
-  imageCount: number;
+  /** Full CDN image URLs, ordered by the source's sortOrder. */
+  images: string[];
   persons: number;
   bedrooms: number;
   bathrooms: number;
@@ -73,7 +84,9 @@ function normalize(raw: RawHouse): House {
     lodgingId: raw.lodgingId,
     fromPrice: raw.fromPrice,
     rating: { average: raw.userRating.average, count: raw.userRating.count },
-    imageCount: raw.images.length,
+    images: [...raw.images]
+      .sort((a, b) => a.sortOrder - b.sortOrder)
+      .map((img) => lodgingImageUrl(img.url)),
     persons: raw.facilities.NumberOfPersons,
     bedrooms: raw.facilities.Bedrooms,
     bathrooms: raw.facilities.NumberOfBathrooms,
