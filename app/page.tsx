@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import HouseListing from "@/components/HouseListing";
+import HouseList from "@/components/HouseList";
 import { getListingHouses } from "@/lib/houses";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const houses = getListingHouses();
   return (
-    <HouseListing
+    <HouseList
       heading="Sommerhuse ved Vestkysten"
       houses={houses}
       listName="Sommerhuse ved Vestkysten"

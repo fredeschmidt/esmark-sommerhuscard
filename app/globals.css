@@ -10,7 +10,7 @@ body {
   @apply bg-white text-slate-900 antialiased;
 }
 
-/* Synligt fokus for tastaturbrugere på tværs af interaktive elementer. */
+/* Visible focus for keyboard users across interactive elements. */
 :focus-visible {
   outline-offset: 2px;
 }

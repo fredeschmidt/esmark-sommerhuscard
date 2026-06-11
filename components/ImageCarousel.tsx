@@ -2,13 +2,14 @@
 
 import { useId, useState } from "react";
 import Image from "next/image";
+import { ChevronIcon } from "./icons";
 
 interface ImageCarouselProps {
-  /** Færdige billed-URL'er til karrusellen (tildeles af listevisningen). */
+  /** Final image URLs for the carousel (assigned by the list view). */
   images: string[];
-  /** Beskrivende grundtekst til alt-attributten, fx husets titel + by. */
+  /** Descriptive base text for the alt attribute, e.g. the house's title + city. */
   altBase: string;
-  /** True for det første kort, så hero-billedet prioriteres af next/image. */
+  /** True for the first card, so the hero image is prioritized by next/image. */
   priority?: boolean;
 }
 
@@ -39,8 +40,8 @@ export default function ImageCarousel({
         }
       }}
     >
-      {/* Kun det aktive billede er reelt synligt; vi bruger next/image til
-          optimering og korrekte dimensioner (undgår layout shift). */}
+      {/* Only the active image is actually visible; we use next/image for
+          optimization and correct dimensions (avoids layout shift). */}
       {images.map((src, i) => (
         <Image
           key={src}
@@ -97,24 +98,5 @@ export default function ImageCarousel({
         </>
       )}
     </div>
-  );
-}
-
-function ChevronIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      width={28}
-      height={28}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2.2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-      className={className}
-    >
-      <path d="M9 6l6 6-6 6" />
-    </svg>
   );
 }

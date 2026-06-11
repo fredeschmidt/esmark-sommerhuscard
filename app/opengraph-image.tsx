@@ -1,8 +1,8 @@
 import { ImageResponse } from "next/og";
 
-// Branded delingsbillede (1200×630). Next genererer og:image- og
-// twitter:image-tags automatisk ud fra denne fil og bruger den som fallback
-// for alle sider, der ikke selv definerer et.
+// Branded sharing image (1200×630). Next generates og:image and
+// twitter:image tags automatically from this file and uses it as a fallback
+// for all pages that don't define their own.
 export const alt = "Esmark – Sommerhuse ved Vestkysten";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

@@ -2,10 +2,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 /**
- * Læser placeholder-fotoene i /public/placeholders ved build-tid og
- * returnerer deres URL'er sorteret numerisk (dansk-sommerhus-1, -2, …).
- * Skalerer automatisk: tilføjes flere filer, indgår de uden kodeændringer.
- * Kun til server-/build-brug (bruger fs).
+ * Reads the placeholder photos in /public/placeholders at build time and
+ * returns their URLs sorted numerically (dansk-sommerhus-1, -2, …).
+ * Scales automatically: if more files are added, they are included without code changes.
+ * Server-/build-use only (uses fs).
  */
 function listPlaceholderFiles(): string[] {
   const dir = path.join(process.cwd(), "public", "placeholders");
@@ -24,11 +24,11 @@ function fileNumber(file: string): number {
 const POOL = listPlaceholderFiles();
 
 /**
- * Tildeler et billedsæt til kortet på position `index` i listen.
- * Billede #1 (hero) er `POOL[index % POOL.length]`, så alle kort på en side
- * får hvert sit unikke hero-billede — så længe antallet af kort ≤ antal fotos.
- * Resten af karrusellens billeder følger efter med forskudt offset, og de tre
- * billeder i ét kort er altid indbyrdes forskellige.
+ * Assigns an image set to the card at position `index` in the list.
+ * Image #1 (hero) is `POOL[index % POOL.length]`, so every card on a page
+ * gets its own unique hero image — as long as the number of cards ≤ number of photos.
+ * The rest of the carousel's images follow with a staggered offset, and the three
+ * images in a single card are always mutually distinct.
  */
 export function imagesForCard(index: number, count = 3): string[] {
   const total = POOL.length;

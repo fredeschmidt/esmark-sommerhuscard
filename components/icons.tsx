@@ -1,8 +1,8 @@
 import type { SVGProps } from "react";
 
 /**
- * Små inline-ikoner til faciliteter. De er rent dekorative (teksten ved
- * siden af bærer betydningen), så de markeres aria-hidden.
+ * Small inline icons for facilities. They are purely decorative (the adjacent
+ * text carries the meaning), so they are marked aria-hidden.
  */
 const base = {
   width: 22,
@@ -70,6 +70,26 @@ export function StarIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} fill="currentColor" stroke="none" {...props}>
       <path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.6 1-5.8-4.3-4.1 5.9-.9L12 3.5Z" />
+    </svg>
+  );
+}
+
+
+export function ChevronIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      width={28}
+      height={28}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2.2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+      className={className}
+    >
+      <path d="M9 6l6 6-6 6" />
     </svg>
   );
 }

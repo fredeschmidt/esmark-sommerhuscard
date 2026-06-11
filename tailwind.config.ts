@@ -8,7 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Esmark-agtig mørkeblå brandfarve til priser/overskrifter.
+        // Esmark-like dark blue brand color for prices/headings.
         brand: {
           DEFAULT: "#0e2a47",
           dark: "#0a2038",

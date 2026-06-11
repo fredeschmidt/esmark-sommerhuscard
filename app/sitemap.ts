@@ -3,8 +3,8 @@ import { getListingCitySlugs } from "@/lib/houses";
 
 const baseUrl = "https://esmark.de";
 
-// Genereres statisk ved build og serveres på /sitemap.xml. Forsiden plus én
-// indgang pr. by-side, så søgemaskiner finder alle kategorisider.
+// Generated statically at build and served at /sitemap.xml. The front page plus
+// one entry per city page, so search engines find all category pages.
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {

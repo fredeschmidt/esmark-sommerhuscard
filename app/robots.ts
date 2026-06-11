@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-// Serveres på /robots.txt. Tillader fuld crawl og peger på sitemap'et.
+// Served at /robots.txt. Allows full crawl and points to the sitemap.
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: "*", allow: "/" },

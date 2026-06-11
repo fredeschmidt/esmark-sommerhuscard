@@ -1,26 +1,26 @@
-import HouseCard from "@/components/HouseCard";
+import HouseItem from "@/components/HouseItem";
 import type { House } from "@/lib/houses";
 import { formatPrice } from "@/lib/format";
 import { imagesForCard } from "@/lib/placeholders";
 
-interface HouseListingProps {
+interface HouseListProps {
   heading: string;
   houses: House[];
-  /** Vist bynavn i brødkrumme; udelades på forsiden. */
+  /** City name shown in the breadcrumb; omitted on the front page. */
   breadcrumbCity?: string;
-  /** Navn på listen i schema.org-struktureret data. */
+  /** Name of the list in schema.org structured data. */
   listName: string;
 }
 
-export default function HouseListing({
+export default function HouseList({
   heading,
   houses,
   breadcrumbCity,
   listName,
-}: HouseListingProps) {
+}: HouseListProps) {
   const fromPrice = formatPrice(Math.min(...houses.map((h) => h.fromPrice)));
 
-  // Struktureret data (schema.org) for listen af feriehuse.
+  // Structured data (schema.org) for the list of holiday homes.
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -87,7 +87,7 @@ export default function HouseListing({
       >
         {houses.map((house, i) => (
           <li key={house.id} className="h-full">
-            <HouseCard
+            <HouseItem
               house={house}
               images={imagesForCard(i)}
               priority={i === 0}

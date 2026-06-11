@@ -1,14 +1,14 @@
 import rawData from "@/data/sommerhuse.json";
 
 /**
- * Datakilden ("sommerhuse.json") er dobbelt-kodet: UTF-8-bytes er gemt som
- * Latin-1, så fx "Blåvand" optræder som "BlÃ¥vand". Vi normaliserer teksten
- * én gang ved indlæsning, så resten af appen kun ser ren dansk tekst.
+ * The data source ("sommerhuse.json") is double-encoded: UTF-8 bytes are stored
+ * as Latin-1, so e.g. "Blåvand" appears as "BlÃ¥vand". We normalize the text
+ * once at load time, so the rest of the app only sees clean Danish text.
  */
 function fixMojibake(value: string): string {
   if (!/[ÃÂ]/.test(value)) return value;
   const decoded = Buffer.from(value, "latin1").toString("utf8");
-  // Hvis re-dekodningen gav et ugyldigt tegn, beholder vi originalen.
+  // If the re-decoding produced an invalid character, we keep the original.
   return decoded.includes("�") ? value : decoded;
 }
 
@@ -40,7 +40,7 @@ interface RawHouse {
   facilities: Facilities;
 }
 
-/** Normaliseret husmodel, som komponenterne arbejder med. */
+/** Normalized house model that the components work with. */
 export interface House {
   id: string;
   name: string;
@@ -87,12 +87,12 @@ function normalize(raw: RawHouse): House {
 
 const allHouses: House[] = (rawData.hits as RawHouse[]).map(normalize);
 
-/** Kriterier for listevisningen: min. 6 personer og hund tilladt. */
+/** Criteria for the list view: min. 6 persons and pets allowed. */
 export function meetsListingCriteria(house: House): boolean {
   return house.persons >= 6 && house.petsAllowed;
 }
 
-/** Slug til URL'er, fx "Blåvand" -> "blaavand". */
+/** Slug for URLs, e.g. "Blåvand" -> "blaavand". */
 export function citySlug(city: string): string {
   return city
     .toLowerCase()
@@ -104,8 +104,8 @@ export function citySlug(city: string): string {
 }
 
 /**
- * Huse til en given kategoriside. Uden `slug` returneres alle huse, der
- * opfylder kriterierne; med `slug` filtreres yderligere på by.
+ * Houses for a given category page. Without `slug`, all houses that meet the
+ * criteria are returned; with `slug`, they are further filtered by city.
  */
 export function getListingHouses(slug?: string): House[] {
   return allHouses
@@ -113,7 +113,7 @@ export function getListingHouses(slug?: string): House[] {
     .filter((h) => !slug || citySlug(h.city) === slug);
 }
 
-/** Alle by-slugs der har mindst ét hus i listevisningen (til statiske ruter). */
+/** All city slugs that have at least one house in the list view (for static routes). */
 export function getListingCitySlugs(): string[] {
   const slugs = new Set(
     allHouses.filter(meetsListingCriteria).map((h) => citySlug(h.city)),
@@ -121,7 +121,7 @@ export function getListingCitySlugs(): string[] {
   return [...slugs];
 }
 
-/** Find det viste bynavn ud fra en slug (til overskrift/metadata). */
+/** Find the displayed city name from a slug (for heading/metadata). */
 export function cityNameFromSlug(slug: string): string | undefined {
   return allHouses.find((h) => citySlug(h.city) === slug)?.city;
 }

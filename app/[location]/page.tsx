@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import HouseListing from "@/components/HouseListing";
+import HouseList from "@/components/HouseList";
 import {
   cityNameFromSlug,
   getListingCitySlugs,
@@ -11,7 +11,7 @@ interface PageProps {
   params: Promise<{ location: string }>;
 }
 
-// Pre-renderer en statisk side pr. by med kvalificerede huse (god for SEO).
+// Pre-renders a static page per city with qualifying houses (good for SEO).
 export function generateStaticParams() {
   return getListingCitySlugs().map((location) => ({ location }));
 }
@@ -55,7 +55,7 @@ export default async function CategoryPage({ params }: PageProps) {
   if (!city || houses.length === 0) notFound();
 
   return (
-    <HouseListing
+    <HouseList
       heading={`Sommerhuse i ${city}`}
       houses={houses}
       breadcrumbCity={city}

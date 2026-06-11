@@ -11,20 +11,21 @@ import {
   ShieldCheckIcon,
   StarIcon,
 } from "@/components/icons";
+import Facility from "./Facility";
 
-interface HouseCardProps {
+interface HouseItemProps {
   house: House;
-  /** Billed-URL'er til kortets karrusel (tildelt unikt pr. kort i listen). */
+  /** Image URLs for the card's carousel (assigned uniquely per card in the list). */
   images: string[];
-  /** Sættes for det første kort, så hero-billedet prioriteres (LCP). */
+  /** Set for the first card, so the hero image is prioritized (LCP). */
   priority?: boolean;
 }
 
-export default function HouseCard({
+export default function HouseItem({
   house,
   images,
   priority = false,
-}: HouseCardProps) {
+}: HouseItemProps) {
   const altBase = `${house.title}, ${house.city}`;
   const href = `/${citySlug(house.city)}/${house.lodgingId}`;
   const ratingValue = new Intl.NumberFormat("da-DK", {
@@ -95,20 +96,3 @@ export default function HouseCard({
   );
 }
 
-function Facility({
-  icon,
-  value,
-  srText,
-}: {
-  icon: React.ReactNode;
-  value: string;
-  srText?: string;
-}) {
-  return (
-    <li className="flex items-center gap-1.5">
-      <span className="text-brand">{icon}</span>
-      {srText && <span className="sr-only">{srText} </span>}
-      <span>{value}</span>
-    </li>
-  );
-}
