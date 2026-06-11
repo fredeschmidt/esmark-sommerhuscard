@@ -54,14 +54,14 @@ export default function HouseCard({
 
       <div className="flex flex-1 flex-col gap-3 p-4">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="text-base font-semibold leading-snug text-slate-900">
+          <h2 className="text-base font-semibold leading-snug text-slate-900">
             <Link
               href={href}
               className="rounded-sm outline-none hover:text-brand focus-visible:underline focus-visible:ring-2 focus-visible:ring-brand"
             >
               {house.title}
             </Link>
-          </h3>
+          </h2>
           <p
             className="flex shrink-0 items-center gap-1 text-sm font-light text-slate-700"
             aria-label={`Bedømmelse ${ratingValue} ud af 5 baseret på ${house.rating.count} anmeldelser`}
